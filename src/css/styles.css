@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+* {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.background-container {
+    background: url("../../assets/bg.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    flex: 1;
+    opacity: 0.9;
+}
+
+
+/* Dotted border */
+
+hr.dotted {
+    border-top: 3px dotted #bbb;
+}
+
+.hidden {
+    display: none;
+}
+
+#loginForms.hidden {
+    display: none !important;
+}
+
+#loginForm.hidden {
+    display: inherit;
+}
+
+.integration-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.integration-container>input {
+    flex: 1;
+}
+
+.integration-container>button {
+    width: 80px;
+}
+
+.cipher-buttons {
+    gap: 10px;
+}
+
+.message {
+    max-height: 30vh;
+    min-height: 10vh;
+    height: 40vh;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.form-control:disabled {
+    opacity: 0.5;
+}
+
+.form-container {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+#userid{
+    color: white;
+}
+
+.card-body {
+    overflow: hidden;
+}
+
+.multi-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.multi-container>span {
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(53, 53, 53);
+    border-radius: 30000px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.multi-container>span:after {
+    content: "x";
+    width: 20px;
+    height: 20px;
+    background: rgb(110, 110, 110);
+    color: white;
+    border-radius: 30000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    line-height: 20px;
+    margin: 5px;
+    vertical-align: middle;
+    margin-right: 0px;
+    font-size: 0.8em;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dialogue {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogue.active {
+    display: flex;
+}
+
+.dialogue.active .form-container {
+    display: none !important;
+}
+
+.dialogue.active .form-container.show {
+    display: inherit !important;
+}
+
+.nav-link>font {
+    pointer-events: none;
+}
+
+#userbtn.active {
+    color: rgb(0, 158, 250) !important;
+}
+
+#logoutBtnCont.hidden {
+    display: none !important;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    min-height: 150px;
+    max-height: 20vh;
+    overflow: auto;
+}
+
+.chat-messages:empty {
+    background-image: url("../../assets/noResults.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.chat-messages>li {
+    font-size: 0.8em;
+    padding: 10px;
+    width: auto;
+    max-width: 50%;
+    list-style: none;
+    display: flex;
+    color:white;
+    align-self: flex-start;
+    word-break: break-all;
+    background: rgb(0, 158, 250);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+}
+
+.chat-messages>li.sent {
+    color:rgb(82, 82, 82);
+    background: white;
+    align-self: flex-end;
+}
+
+#chatbtn{
+    display: none;
+}
+
+#chatbtn.active{
+    display: inline;
+}
+
+/** Angular CSS code **/
+
+.pigpen-wrapper {
+    display: inline-block;
+    background: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.dotted {
+    background: black;
+    -webkit-box-shadow: inset 0px 0px 0px 23px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px 0px 0px 23px rgba(255, 255, 255, 1);
+    box-shadow: inset -2px 0px 0px 23px rgba(255, 255, 255, 1);
+}
+
+.pigpen {
+    display: inline-block;
+    background: transparent;
+    width: 10px;
+    height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 4px solid white;
+}
+
+.a,
+.j {
+    border-color: white black black white;
+}
+
+.b,
+.k {
+    border-color: white black black black;
+}
+
+.c,
+.l {
+    border-color: white white black black;
+}
+
+.d,
+.m {
+    border-color: black black black white;
+}
+
+.e,
+.n {
+    border-color: black black black black;
+}
+
+.f,
+.o {
+    border-color: black white black black;
+}
+
+.g,
+.p {
+    border-color: black black white white;
+}
+
+.h,
+.q {
+    border-color: black black white black;
+}
+
+.i,
+.r {
+    border-color: black white white black;
+}
+
+.s {
+    border-color: white black black white;
+    transform: translate(0px, -6px) rotate(45deg);
+}
+
+.u {
+    border-color: white white black black;
+    transform: translate(6px, 0px) rotate(45deg);
+}
+
+.t {
+    border-color: black black white white;
+    transform: translate(-6px, 0px) rotate(45deg);
+}
+
+.v {
+    border-color: black white white black;
+    transform: translate(0px, 6px) rotate(45deg);
+}
+
+.w {
+    border-color: white black black white;
+    transform: translate(0px, -6px) rotate(45deg);
+}
+
+.y {
+    border-color: white white black black;
+    transform: translate(6px, 0px) rotate(45deg);
+}
+
+.x {
+    border-color: black black white white;
+    transform: translate(-6px, 0px) rotate(45deg);
+}
+
+.z {
+    border-color: black white white black;
+    transform: translate(0px, 6px) rotate(45deg);
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #ciphersbtn.nav-link{
+        display: none;
+    }
+    #rsabtn.nav-link{
+        display: none;
+    }
+    #aesbtn.nav-link{
+        display: none;
+    }
+    #blowfishbtn.nav-link{
+        display: none;
+    }
+    #hashbtn.nav-link{
+        display: none;
+    }
+  }

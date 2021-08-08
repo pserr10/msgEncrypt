@@ -1,0 +1,39 @@
+{
+    "name": "MsgCipher",
+    "display": "standalone",
+    "start_url": "https://conceptree.github.io/msgCipher/",
+    "short_name": "MsgCipher",
+    "theme_color": "#E1477E",
+    "description": "This is a PWA for the msg cipher app.",
+    "orientation": "any",
+    "background_color": "#E1477E",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+      {
+        "src": "./assets/android/android-launchericon-512-512.png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "./assets/android/android-launchericon-192-192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "./assets/android/android-launchericon-48-48.png",
+        "sizes": "48x48",
+        "purpose":"maskable"
+      }
+    ],
+    "screenshots": [],
+    "features": [
+      "Cross Platform",
+      "fast",
+      "simple",
+      "secure"
+    ],
+    "categories": [
+      "utility"
+    ]
+  }
+
+  

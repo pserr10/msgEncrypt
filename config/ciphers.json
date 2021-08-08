@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Cesar",
+        "object": "CesarCipher",
+        "key": true
+    },
+    {
+        "name": "Numerical Alphabet",
+        "object": "NumericalAlphabetCipher",
+        "key": true
+    },
+    {
+        "name": "Crab",
+        "object": "CrabCipher",
+        "key": true
+    },
+    {
+        "name": "Two Meters",
+        "object": "TwoMetersCipher",
+        "key": true
+    },
+    {
+        "name": "Vertical",
+        "object": "VerticalCipher",
+        "key": true
+    },
+    {
+        "name": "SMS",
+        "object": "SmsCipher",
+        "key": false
+    },
+    {
+        "name": "Fake Braille",
+        "object": "FakeBrailleCipher",
+        "key": true
+    },
+    {
+        "name": "Data",
+        "object": "DataCipher",
+        "key": true
+    },
+    {
+        "name": "Morse Nodes",
+        "object": "MorseNodes",
+        "key": false
+    },
+    {
+        "name": "Inverted Alphabet",
+        "object": "InvertedAlphabetCipher",
+        "key": false
+    },
+    {
+        "name": "Snail Cipher",
+        "object": "SnailCipher",
+        "key": true
+    },
+    {
+        "name": "Passa1Melro",
+        "object": "Passa1Melro",
+        "key": false
+    },
+    {
+        "name": "Mountain Morse",
+        "object": "MountainMorse",
+        "key": false
+    },
+    {
+        "name": "Horizontal",
+        "object": "HorizontalCipher",
+        "key": false
+    },
+    {
+        "name": "Fake First Letter",
+        "object": "FirstFakeLetterCipher",
+        "key": false
+    },
+    {
+        "name": "Transporto alphabet",
+        "object": "TransportoCipher",
+        "key": true
+    },
+    {
+        "name": "Angular Cipher",
+        "object": "AngularCipher",
+        "key": false
+    },
+    {
+        "name": "Vertical Key Phrase",
+        "object": "VerticalKeyPhraseCipher",
+        "key": true
+    },
+    {
+        "name": "Vowels By Dots",
+        "object": "VogaisPorPonto",
+        "key": false
+    },
+    {
+        "name": "Naval Battle",
+        "object": "BatalhaNaval",
+        "key": true
+    },
+    {
+        "name": "Last Letter Fake",
+        "object": "UltimaLetraFalsa",
+        "key": false
+    },
+    {
+        "name": "Chinese Code 2",
+        "object": "CodigoChines2",
+        "key": false
+    }
+]
